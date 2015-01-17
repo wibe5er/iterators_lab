@@ -31,7 +31,6 @@ Use the notes provided to help guide you explanation.
 
 ### Phase-2
 
-* Fork and clone this repository.
 * Run `npm install` from the `iterators_lab` directory.
 * Looks at the tests we've written in the `test` folder. Run the tests
   with `npm test` (also from the `iterators_lab` directory). They
