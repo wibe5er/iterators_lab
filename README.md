@@ -34,8 +34,9 @@ Use the notes provided to help guide you explanation.
 * Run `npm install` from the `iterators_lab` directory.
 * Looks at the tests we've written in the `test` folder. Run the tests
   with `npm test` (also from the `iterators_lab` directory). They
-  should all fail. Your job is to write the necessary code in the
-  `src/iterators.js` file that gets them to pass.
+  should all fail.
+* Get all of the tests to pass by writing the necessary code in
+  `src/iterators.js`.
 
 ### Phase-3
 
