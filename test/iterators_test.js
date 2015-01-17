@@ -10,4 +10,13 @@ describe("Iterators", function () {
       expect(Iterators.tripler([100,99,98])).to.deep.equal([300,297,294]);
     });
   });
+  describe("#perfectSquares", function () {
+    it("should filter for perfect squares", function () {
+      expect(Iterators.perfectSquares([1,2,3])).to.deep.equal([1]);
+      expect(Iterators.perfectSquares([4,5,6])).to.deep.equal([4]);
+      expect(Iterators.perfectSquares([1,4,9])).to.deep.equal([1,4,9]);
+      expect(Iterators.perfectSquares([100])).to.deep.equal([100]);
+      expect(Iterators.perfectSquares([])).to.deep.equal([]);
+    });
+  });
 });
