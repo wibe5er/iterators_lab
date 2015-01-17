@@ -1,18 +1,10 @@
-var expect = require('chai').expect,
-  Iterators = require('../src/iterators.js');
+var expect = require("chai").expect;
+var Iterators = require("../src/iterators.js");
 
-describe('Iterators', function(){
-  describe('#max', function(){
-    var myArr;
-    beforeEach(function(){
-      myArr = [66,22,67, 34];
+describe("Iterators", function () {
+  describe("#useForEach", function () {
+    it("should work", function () {
+      expect(Iterators.useForEach([])).to.be.ok();
     });
-    it('should return the maximum in an array', function(){
-      expect(Iterators.max(myArr)).to.equal(67);
-    })    
-    it('should return -Infinity for empty array', function(){
-      myArr = [];
-      expect(Iterators.max(myArr)).to.equal(-Infinity);
-    })
-  })
-})
+  });
+});
