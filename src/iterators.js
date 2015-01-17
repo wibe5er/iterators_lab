@@ -15,6 +15,10 @@ var Iterators = {
   // - perfectSquares([1,4,9]) should return [1,4,9].
   // Use `filter` to accomplish this.
   perfectSquares: function (numbers) {
+  },
+
+  useReduce: function () {
+    return false;
   }
 };
 

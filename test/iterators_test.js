@@ -19,4 +19,9 @@ describe("Iterators", function () {
       expect(Iterators.perfectSquares([])).to.deep.equal([]);
     });
   });
+  describe("#useReduce", function () {
+    it("should use reduce somehow", function () {
+      expect(Iterators.useReduce([])).to.be.ok();
+    });
+  });
 });
