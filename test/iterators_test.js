@@ -52,4 +52,13 @@ describe("Iterators", function () {
       expect(Iterators.remove([1,2,3,3,3,3,3], 3)).to.deep.equal([1,2]);
     });
   });
+  describe("#devowel", function () {
+    it("should remove the vowels from a string", function () {
+      expect(Iterators.devowel("What's up?")).to.equal("Wht's p?");
+      expect(Iterators.devowel("Howdy")).to.equal("Hwdy");
+      expect(Iterators.devowel("Phone's ringing, dude.")).to.equal("Phn's rngng, dd.");
+      expect(Iterators.devowel("abcdefghijklmnopqrstuvwxyz")).to.equal("bcdfghjklmnpqrstvwxyz");
+      expect(Iterators.devowel("aeiou")).to.equal("");
+    });
+  });
 });

@@ -66,6 +66,21 @@ var Iterators = {
   // - remove([], 17) should return [],
   // - remove([1,1,2,3], 1) should return [2,3]
   remove: function (list, item) {
+  },
+
+  // Also not an iterator metheod, necessarily. devowel() takes a
+  // string as a parameter and returns the same string with all of the
+  // vowels removed. There are several ways to do this. One involves
+  // Regular Expressions, but we haven't talked about those and they
+  // can be tricky. Another involves converting the string into an
+  // array (check out the .split() and .join() string methods) and
+  // then using filter(). There are probably other solutions as well,
+  // so solve as best you can.
+  // As an example:
+  // - devowel("What's up?") should return "Wht's p?",
+  // - devowel("Howdy") should return "Hwdy",
+  // - devowel("Phone's ringing, dude.") should return "Phn's rngng, dd.".
+  devowel: function (text) {
   }
 };
 
