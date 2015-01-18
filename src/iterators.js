@@ -38,6 +38,20 @@ var Iterators = {
   // Use `some` to accomplish this.
   // Hint: see `toLowerCase` could be useful.
   hasInstructor: function (names) {
+  },
+
+  // allSamePlayer() should accept an array of players, represented by
+  // X's and O's. The players array may also contain empty spots, which
+  // are neither an X nor an O. The function should return true if the
+  // array is comprised of all Xs or all Os, and false otherwise.
+  // For example,
+  // - allSamePlayer(["X","X","X"]) should return true,
+  // - allSamePlayer(["X","O","X"]) should return false,
+  // - allSamePlayer(["O","O","O"]) should return true,
+  // - allSamePlayer(["X","_","X"]) should return false,
+  // - allSamePlayer(["_","_","_"]) should return false.
+  // Use `every` to accomplish this.
+  allSamePlayer: function (players) {
   }
 };
 

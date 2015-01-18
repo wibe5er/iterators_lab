@@ -34,4 +34,13 @@ describe("Iterators", function () {
       expect(Iterators.hasInstructor(["Bob", "Tim", "Jen"])).to.be.true;
     });
   });
+  describe("#allSamePlayer", function () {
+    it("should determine if an array consists of only one player", function () {
+      expect(Iterators.allSamePlayer(["X","X","X"])).to.be.true;
+      expect(Iterators.allSamePlayer(["X","O","X"])).to.be.false;
+      expect(Iterators.allSamePlayer(["O","O","O"])).to.be.true;
+      expect(Iterators.allSamePlayer(["X","_","X"])).to.be.false;
+      expect(Iterators.allSamePlayer(["_","_","_"])).to.be.false;
+    });
+  });
 });
