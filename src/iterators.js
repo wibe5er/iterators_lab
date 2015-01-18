@@ -52,6 +52,20 @@ var Iterators = {
   // - allSamePlayer(["_","_","_"]) should return false.
   // Use `every` to accomplish this.
   allSamePlayer: function (players) {
+  },
+
+  // This is NOT an iterator method, but it's interesting
+  // nonetheless. remove() takes an array and an item and removes all
+  // instances of the item from the array. JavaScript provides an
+  // `indexOf` method that finds the position of the item in an
+  // array. It also provides a `splice` method that is able to remove
+  // an item from an array. Combine these two to create remove(). For
+  // example,
+  // - remove([1,2,3], 2) should return [1,3],
+  // - remove([1,2,3], 4) should return [1,2,3],
+  // - remove([], 17) should return [],
+  // - remove([1,1,2,3], 1) should return [2,3]
+  remove: function (list, item) {
   }
 };
 
