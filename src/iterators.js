@@ -25,6 +25,19 @@ var Iterators = {
   // - product([100,200,300]) should return 6000000.
   // Use `reduce` to accomplish this.
   product: function (numbers) {
+  },
+
+  // hasInstructor() accepts an array of names and should return true
+  // if the array contains the name of an instructor ("Tim", "Elie",
+  // or "Alex"). Note: this should be case insensitive, meaning it
+  // should return true if the list contains either "Alex" or "alex".
+  // For example,
+  // - hasInstructor(["bob", "joe", "jen"]) should return false,
+  // - hasInstructor(["bob", "tim", "jen"]) should return true,
+  // - hasInstructor(["Bob", "Tim", "Jen"]) should return true.
+  // Use `some` to accomplish this.
+  // Hint: see `toLowerCase` could be useful.
+  hasInstructor: function (names) {
   }
 };
 

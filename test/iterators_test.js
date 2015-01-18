@@ -27,4 +27,11 @@ describe("Iterators", function () {
       expect(Iterators.product([-1,-2,-3])).to.equal(-6);
     });
   });
+  describe("#hasInstructor", function () {
+    it("should determine if an instructor is contained in an array", function () {
+      expect(Iterators.hasInstructor(["bob", "joe", "jen"])).to.be.false;
+      expect(Iterators.hasInstructor(["bob", "tim", "jen"])).to.be.true;
+      expect(Iterators.hasInstructor(["Bob", "Tim", "Jen"])).to.be.true;
+    });
+  });
 });
