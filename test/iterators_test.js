@@ -19,9 +19,12 @@ describe("Iterators", function () {
       expect(Iterators.perfectSquares([])).to.deep.equal([]);
     });
   });
-  describe("#useReduce", function () {
-    it("should use reduce somehow", function () {
-      expect(Iterators.useReduce([])).to.be.ok();
+  describe("#product", function () {
+    it("should return the product of numbers in an array", function () {
+      expect(Iterators.product([1,2,3])).to.equal(6);
+      expect(Iterators.product([0,1,2])).to.equal(0);
+      expect(Iterators.product([100,200,300])).to.equal(6000000);
+      expect(Iterators.product([-1,-2,-3])).to.equal(-6);
     });
   });
 });

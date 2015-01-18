@@ -17,8 +17,14 @@ var Iterators = {
   perfectSquares: function (numbers) {
   },
 
-  useReduce: function () {
-    return false;
+  // product() should accept an array of numbers as a parameter
+  // and return the product of multiplying all those numbers together.
+  // For example,
+  // - product([1,2,3]) should return 6, and
+  // - product([0,1,2]) should return 0, and
+  // - product([100,200,300]) should return 6000000.
+  // Use `reduce` to accomplish this.
+  product: function (numbers) {
   }
 };
 
