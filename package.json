@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec test"
+    "test": "mocha --reporter=spec test"
   },
   "dependencies": {
     "chai": "^1.9.1",
