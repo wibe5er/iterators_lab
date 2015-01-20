@@ -43,15 +43,6 @@ describe("Iterators", function () {
       expect(Iterators.allSamePlayer(["_","_","_"])).to.be.false;
     });
   });
-  describe("#remove", function () {
-    it("should remove all instances of an item from an array", function () {
-      expect(Iterators.remove([1,2,3], 2)).to.deep.equal([1,3]);
-      expect(Iterators.remove([1,2,3], 4)).to.deep.equal([1,2,3]);
-      expect(Iterators.remove([], 17)).to.deep.equal([]);
-      expect(Iterators.remove([1,1,2,3], 1)).to.deep.equal([2,3]);
-      expect(Iterators.remove([1,2,3,3,3,3,3], 3)).to.deep.equal([1,2]);
-    });
-  });
   describe("#devowel", function () {
     it("should remove all the vowels from a string", function () {
       expect(Iterators.devowel("What's up?")).to.equal("Wht's p?");
