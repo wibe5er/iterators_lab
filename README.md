@@ -1,5 +1,4 @@
 # Iterators Lab
-## Functional Programming
 
 ### Description
 
