@@ -4,8 +4,13 @@ var Iterators = {
   // - tripler([1,2,3]) should return [3,6,9], and
   // - tripler([7,50,4]) should return [21,150,12].
   // Use `map` to accomplish this.
-  tripler: function (numbers) {
-  },
+ tripler: function (numbers) {
+    var test = numbers.map( function (numbers) {
+      return numbers * 3;
+    } );
+     return test;
+  }, 
+ 
 
   // perfectSquares() should take an array of numbers as a parameter
   // and return an array that contains only the numbers from the
@@ -16,6 +21,10 @@ var Iterators = {
   // - perfectSquares([1,4,9]) should return [1,4,9].
   // Use `filter` to accomplish this.
   perfectSquares: function (numbers) {
+   var wholeSquare = function (numbers) {
+    return Math.sqrt(numbers)%1 === 0;
+   };
+   return numbers.filter(wholeSquare);
   },
 
   // product() should accept an array of numbers as a parameter
@@ -26,6 +35,10 @@ var Iterators = {
   // - product([100,200,300]) should return 6000000.
   // Use `reduce` to accomplish this.
   product: function (numbers) {
+    var multiply = function (a, b) {
+      return a * b;
+    };
+    return numbers.reduce(multiply);
   },
 
   // hasInstructor() accepts an array of names and should return true
@@ -39,6 +52,13 @@ var Iterators = {
   // Use `some` to accomplish this.
   // Hint: see `toLowerCase`, it could be useful.
   hasInstructor: function (names) {
+    
+    var instructorCheck = function (names) {
+    var dudes = ["tim", "elie", "alex"];
+    names = names.toLowerCase();
+    return dudes.indexOf(names) !== -1; 
+    };
+    return names.some(instructorCheck);
   },
 
   // allSamePlayer() should accept an array of players, represented by
@@ -53,6 +73,24 @@ var Iterators = {
   // - allSamePlayer(["_","_","_"]) should return false.
   // Use `every` to accomplish this.
   allSamePlayer: function (players) {
+    // first thing I want to see
+      // is the first index in the array "X" or "O"
+      // if not, return false
+
+    // if yes, let's set variable called first = players[0]
+    if (players[0]=== "X" || players[0]=== "O"){
+
+
+    var first = players[0]; 
+  }
+    else { 
+      return false; 
+    }
+
+    return players.every(function (player){
+      console.log(player);
+      return player === first;
+    });
   },
 
   // Also not an iterator metheod, necessarily. devowel() takes a
@@ -68,6 +106,20 @@ var Iterators = {
   // - devowel("Howdy") should return "Hwdy",
   // - devowel("Phone's ringing, dude.") should return "Phn's rngng, dd.".
   devowel: function (text) {
+    var vowels = ["e", "o", "i", "u", "a"];
+    var isNotVowel = function (letter) {
+      return letter !== vowels;
+    };
+
+    var splitText = function (text) {
+      text =  text.split("");
+      };
+      text.every( function (splitText){
+      text.filter(isNotVowel);
+      });
+      return text.join();
+    
+    
   }
 };
 
